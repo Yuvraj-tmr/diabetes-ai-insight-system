@@ -15,6 +15,11 @@ const About = () => {
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Advanced machine learning research for diabetes risk prediction and healthcare AI
             </p>
+            <div className="mt-6 p-4 bg-gradient-medical/10 rounded-lg border border-primary/20">
+              <p className="text-lg font-semibold text-primary">
+                Made by Yuvraj Tomar (219302345) for Major Project in 8th Semester
+              </p>
+            </div>
           </div>
 
           <div className="max-w-6xl mx-auto space-y-8">

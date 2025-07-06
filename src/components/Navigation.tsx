@@ -36,10 +36,10 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-8 h-8 bg-gradient-medical rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">AI</span>
+              <span className="text-white font-bold text-sm">DR</span>
             </div>
             <span className="font-bold text-xl text-primary hidden sm:block">
-              Diabetes AI
+              DiabetesRiskPredictor
             </span>
           </Link>
 
