@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Medical AI Design System - Professional Healthcare Aesthetic */
 
 @layer base {
   :root {
@@ -17,24 +15,54 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Medical Blue - Primary brand color for trust */
+    --primary: 217 91% 52%;  /* #2563eb medical blue */
     --primary-foreground: 210 40% 98%;
+    --primary-light: 217 91% 65%;  /* lighter medical blue */
+    --primary-dark: 217 91% 42%;   /* darker medical blue */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Healthcare Green - Success and positive outcomes */
+    --secondary: 160 84% 39%;  /* #059669 healthcare green */
+    --secondary-foreground: 210 40% 98%;
+    --secondary-light: 160 84% 52%;
+    --secondary-dark: 160 84% 29%;
 
+    /* Clinical backgrounds */
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Warning/Risk colors */
+    --warning: 25 95% 53%;     /* #ea580c warning orange */
+    --warning-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;  /* high risk red */
     --destructive-foreground: 210 40% 98%;
 
+    /* Clinical UI elements */
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 217 91% 52%;  /* medical blue ring */
+
+    /* Gradients for medical aesthetics */
+    --gradient-medical: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-risk-low: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
+    --gradient-risk-moderate: linear-gradient(135deg, hsl(var(--warning)), hsl(25 95% 65%));
+    --gradient-risk-high: linear-gradient(135deg, hsl(var(--destructive)), hsl(0 84% 70%));
+
+    /* Medical shadows and effects */
+    --shadow-medical: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-success: 0 10px 30px -10px hsl(var(--secondary) / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(var(--foreground) / 0.1);
+    --glow-primary: 0 0 30px hsl(var(--primary) / 0.3);
+    --glow-success: 0 0 30px hsl(var(--secondary) / 0.3);
+
+    /* Professional transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.5rem;
 

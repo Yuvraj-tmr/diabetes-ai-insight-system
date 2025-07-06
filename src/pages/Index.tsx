@@ -1,12 +1,46 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import RiskCalculator from "@/components/RiskCalculator";
+import PerformanceAnalysis from "@/components/PerformanceAnalysis";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <HeroSection />
+      <RiskCalculator />
+      <PerformanceAnalysis />
+      
+      {/* Research Section */}
+      <section id="research" className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-foreground mb-8">
+            Advanced Machine Learning Research
+          </h2>
+          <div className="max-w-4xl mx-auto space-y-6">
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              This project represents a systematic approach to diabetes risk prediction using state-of-the-art 
+              machine learning techniques. Our research combines clinical expertise with advanced AI to create 
+              practical tools for healthcare professionals.
+            </p>
+            <div className="grid md:grid-cols-3 gap-8 mt-12">
+              <div className="text-center">
+                <div className="text-3xl mb-4">🔬</div>
+                <h3 className="text-xl font-semibold mb-2 text-primary">Scientific Rigor</h3>
+                <p className="text-muted-foreground">Systematic comparison with statistical validation</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl mb-4">🏥</div>
+                <h3 className="text-xl font-semibold mb-2 text-primary">Clinical Relevance</h3>
+                <p className="text-muted-foreground">Real-world applicability for healthcare settings</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl mb-4">🤝</div>
+                <h3 className="text-xl font-semibold mb-2 text-primary">Ethical AI</h3>
+                <p className="text-muted-foreground">Transparent, explainable, and responsible AI development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
