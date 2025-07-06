@@ -1,5 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-medical-ai.jpg";
 
 const HeroSection = () => {
@@ -55,25 +57,31 @@ const HeroSection = () => {
               variant="hero" 
               size="lg"
               className="text-lg px-8 py-6 h-auto"
-              onClick={() => document.getElementById('risk-calculator')?.scrollIntoView({ behavior: 'smooth' })}
+              asChild
             >
-              Try Interactive Demo
+              <Link to="/calculator">
+                Try Interactive Demo
+              </Link>
             </Button>
             <Button 
               variant="outline" 
               size="lg"
               className="text-lg px-8 py-6 h-auto border-white/30 text-primary-foreground hover:bg-white/10"
-              onClick={() => document.getElementById('performance-analysis')?.scrollIntoView({ behavior: 'smooth' })}
+              asChild
             >
-              View Performance Analysis
+              <Link to="/analysis">
+                View Performance Analysis
+              </Link>
             </Button>
             <Button 
               variant="ghost" 
               size="lg"
               className="text-lg px-8 py-6 h-auto text-primary-foreground hover:bg-white/10"
-              onClick={() => document.getElementById('research')?.scrollIntoView({ behavior: 'smooth' })}
+              asChild
             >
-              Explore Research
+              <Link to="/research">
+                Explore Research
+              </Link>
             </Button>
           </div>
 

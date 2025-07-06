@@ -1,6 +1,9 @@
+
 import HeroSection from "@/components/HeroSection";
 import RiskCalculator from "@/components/RiskCalculator";
 import PerformanceAnalysis from "@/components/PerformanceAnalysis";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -37,6 +40,13 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-2 text-primary">Ethical AI</h3>
                 <p className="text-muted-foreground">Transparent, explainable, and responsible AI development</p>
               </div>
+            </div>
+            <div className="mt-8">
+              <Button variant="medical" size="lg" asChild>
+                <Link to="/research">
+                  Learn More About Our Research
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
